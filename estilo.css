@@ -1,2 +1,38 @@
 /* Importa o arquivo CSS que importa a fonte Ravie */
 @import "fonts/ravie.css";
+#recipiente{
+  position: relative;
+  background: linear-gradient(#f6f1b2, #4599b2);
+  color:#333;
+}
+header> h1{
+  font-family: Ravie;
+  font-size: 36px;
+  color: #e90c0c;
+
+}
+header> h2{
+  font-family: Trebuchet MS;
+  font-size: : 24px;
+}
+mark{
+  color: #d027aa;
+  background-color: transparent;
+}
+aside{
+  position: absolute;
+  left: 0px
+}
+aside>h2{
+  font-family: Verdana;
+  font-size: 48px;
+  font-weight: bold;
+  transform: rotate(-90deg);
+  transition: left 100ms ease-out;
+}
+article{
+  position: absolute;
+  left: 154px;
+  border: 1px;
+  border-color: #aac0ae;
+}
