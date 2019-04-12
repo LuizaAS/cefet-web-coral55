@@ -1,19 +1,40 @@
 /* Importa o arquivo CSS que importa a fonte Ravie */
 @import "fonts/ravie.css";
+
+body{
+  margin: auto;
+  background-color: white;
+  max-height: 100vh;
+}
+
 #recipiente{
   position: relative;
   background: linear-gradient(#f6f1b2, #4599b2);
   color:#333;
+  border-color: #d3d3d3;
+  border: 1px;
+  height: 100vh;
+  width: 900px;
+  margin-left: 89px;
+  padding-left: 17px;
+  align-self: center;
+
+}
+header{
+  left: 180px;
+  padding-top: 30px;
+  position: relative;
+  width: 646px;
 }
 header> h1{
   font-family: Ravie;
   font-size: 36px;
   color: #e90c0c;
-
 }
 header> h2{
   font-family: Trebuchet MS;
-  font-size: : 24px;
+  font-size:  24px;
+  text-align: center;
 }
 mark{
   color: #d027aa;
@@ -21,18 +42,84 @@ mark{
 }
 aside{
   position: absolute;
-  left: 0px
+  float: left;
+  top: 0px;
+  width: 154px;
+  height: 100vh;
 }
-aside>h2{
+#siri{
+  position: relative;
+  left: -10px;
+  top: 0px;
+}
+aside h2{
+  position: relative;
+  transform: rotate(-90deg);
   font-family: Verdana;
   font-size: 48px;
   font-weight: bold;
-  transform: rotate(-90deg);
-  transition: left 100ms ease-out;
+  float: left;
+  width: 8em;
+  height: 1em;
+  left: -3em;
+}
+#bolhas{
+  padding-right: 20px;
+  padding-bottom: 14px;
+  padding-top: 8em; 
+  position: relative;
+}
+#peixe{
+  position: relative;
+  left: -44px;
 }
 article{
-  position: absolute;
-  left: 154px;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: relative;
+  float: right;
+  top: 0px;
+  left: 0px;
+  width: 646px;
   border: 1px;
+  margin-right: 0px;
   border-color: #aac0ae;
+}
+
+article p{
+  text-align: left;
+  line-height: 2em;
+}
+article p span{
+  text-align: right;
+}
+article h3{
+  text-align: left;
+  font-family: 'Verdana';
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  padding-left: 10px;
+  margin-top: 25px;
+}
+
+article p:last-child{
+  margin-bottom: 25px;
+}
+#ticket{
+  left: -100px;
+  transition: left 100ms ease-out; /* propriedade, duração, interpolação */
+  position: fixed;
+  top: 295px;
+  padding-right: 89px;
+}
+#ticket:hover {
+  left: 0;
+}
+footer{
+  position: absolute;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  margin-top: 46px;
+  right: 0;
+  bottom: 0;
 }
